@@ -301,13 +301,167 @@
         </div>
 
         <div class="category-tabs">
-          <button class="tab-button">Sale & Conversion Optimization</button>
-          <button class="tab-button active">Marketing</button>
-          <button class="tab-button">Inventory & Order Management</button>
-          <button class="tab-button">Payment & Fraud Protection</button>
+          <input type="radio" name="category" id="marketing" value="marketing" checked>
+          <label for="marketing" class="tab-button active">Marketing</label>
+          
+          <input type="radio" name="category" id="sale" value="sale">
+          <label for="sale" class="tab-button">Sale & Conversion Optimization</label>
+          
+          <input type="radio" name="category" id="inventory" value="inventory">
+          <label for="inventory" class="tab-button">Inventory & Order Management</label>
+          
+          <input type="radio" name="category" id="payment" value="payment">
+          <label for="payment" class="tab-button">Payment & Fraud Protection</label>
         </div>
 
-        <div class="app-cards-grid"></div>
+        <div class="app-cards-grid">
+          <!-- Marketing Apps -->
+          <div class="app-section" id="marketing-apps">
+            <div class="app-card" data-category="Marketing">
+              <div class="app-icon-container">
+                <div class="app-icon-bg">
+                  <img src="assets/app_icon/FBPX.webp" alt="Omega Facebook Pixel" />
+                </div>
+              </div>
+              <div class="app-info">
+                <h3 class="app-title">Omega Facebook Pixel</h3>
+                <p class="app-category">Facebook Pixel Meta Feed</p>
+                <p class="app-description">Achieve expert-level tracking with Facebook Pixel and Conversion API to capture every signal, understand buyer behavior, and retarget ads with advanced data.</p>
+                <div class="app-details">
+                  <p>Review: 4.8 (845 reviews)</p>
+                  <p>Currently Installed: 369 stores</p>
+                  <p>Include: Engel Coolers, PC Express, Aanya Linen, The Vintage Teacup, Moman PhotoGears</p>
+                  <p class="discount">Discount: <span>20% OFF all plans in 3 months</span></p>
+                </div>
+                <div class="app-code">
+                  <span>Code: <strong>BFCM_2025p1ds2</strong></span>
+                  <button class="copy-button" onclick="copyToClipboard('BFCM_2025p1ds2')">
+                    <img src="assets/copy.webp" alt="Copy" />
+                  </button>
+                </div>
+                <a href="1" target="_blank"><button class="app-button">Get started</button></a>
+              </div>
+            </div>
+
+            <div class="app-card" data-category="Marketing">
+              <div class="app-icon-container">
+                <div class="app-icon-bg">
+                  <img src="assets/app_icon/tagfly.webp" alt="TagFly" />
+                </div>
+              </div>
+              <div class="app-info">
+                <h3 class="app-title">TagFly</h3>
+                <p class="app-category">Google Ads, Tag Manager</p>
+                <p class="app-description">Full conversion tracking for Google Ads, GA4 (Google Analytics) and Facebook Ads in minutes with simple Google Tag Manager (GTM) set up.</p>
+                <div class="app-details">
+                  <p>Review: 4.8 (115 reviews)</p>
+                  <p>Currently Installed: 369 stores</p>
+                  <p>Top Stores Used The App: Engel Coolers, PC Express, Aanya Linen, The Vintage Teacup, Moman PhotoGears</p>
+                  <p class="discount">Discount: <span>50% OFF all plans for 1 month</span></p>
+                </div>
+                <div class="app-code">
+                  <span>Code: <strong>TF_BFCM2025</strong></span>
+                  <button class="copy-button" onclick="copyToClipboard('TF_BFCM2025')">
+                    <img src="assets/copy.webp" alt="Copy" />
+                  </button>
+                </div>
+                <a href="1" target="_blank"><button class="app-button">Get started</button></a>
+              </div>
+            </div>
+
+            <!-- Add other Marketing apps here -->
+          </div>
+
+          <!-- Sale & Conversion Optimization Apps -->
+          <div class="app-section" id="sale-apps">
+            <div class="app-card" data-category="Sale & Conversion Optimization">
+              <div class="app-icon-container">
+                <div class="app-icon-bg">
+                  <img src="assets/app_icon/parento.webp" alt="Pareto Quantity Breaks & Discounts" />
+                </div>
+              </div>
+              <div class="app-info">
+                <h3 class="app-title">Pareto Quantity Breaks & Discounts</h3>
+                <p class="app-description">Turn one-time shoppers into high-value buyers with Pareto - the all-in-one tool for smart bundles, and flexible discount campaigns.</p>
+                <div class="app-details">
+                  <p>Review: 4.9 (193 reviews)</p>
+                  <p>Currently Installed: 369 stores</p>
+                  <p>Include: Engel Coolers, PC Express, Aanya Linen, The Vintage Teacup, Moman PhotoGears</p>
+                  <div class="discount">
+                    <p>Discount:</p>
+                    <ul class="discount-list">
+                      <li>15% OFF all plans in 3 months: PQB_BFCM_MCD</li>
+                      <li>25% OFF lifetime on yearly upgrade: PQB_BFCM_YCD</li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="1" target="_blank"><button class="app-button">Get started</button></a>
+              </div>
+            </div>
+
+            <!-- Add other Sale & Conversion apps here -->
+          </div>
+
+          <!-- Inventory & Order Management Apps -->
+          <div class="app-section" id="inventory-apps">
+            <div class="app-card" data-category="Inventory & Order Management">
+              <div class="app-icon-container">
+                <div class="app-icon-bg">
+                  <img src="assets/app_icon/sync-tracking.webp" alt="Synctrack Order Tracking" />
+                </div>
+              </div>
+              <div class="app-info">
+                <h3 class="app-title">Synctrack Order Tracking</h3>
+                <p class="app-description">Branded order tracking page to track orders easily. Reduce WISMO tickets. Ask & display reviews.</p>
+                <div class="app-details">
+                  <p>Review: 4.6 (58 reviews)</p>
+                  <p>Currently Installed: 369 stores</p>
+                  <p>Include: Engel Coolers, PC Express, Aanya Linen, The Vintage Teacup, Moman PhotoGears</p>
+                  <p class="discount">Discount: <span>40% OFF for 2 months</span></p>
+                </div>
+                <div class="app-code">
+                  <span>Code: <strong>STPP_BFCM_40</strong></span>
+                  <button class="copy-button" onclick="copyToClipboard('STPP_BFCM_40')">
+                    <img src="assets/copy.webp" alt="Copy" />
+                  </button>
+                </div>
+                <a href="1" target="_blank"><button class="app-button">Get started</button></a>
+              </div>
+            </div>
+
+            <!-- Add other Inventory & Order Management apps here -->
+          </div>
+
+          <!-- Payment & Fraud Protection Apps -->
+          <div class="app-section" id="payment-apps">
+            <div class="app-card" data-category="Payment & Fraud Protection">
+              <div class="app-icon-container">
+                <div class="app-icon-bg">
+                  <img src="assets/app_icon/sync-pay.webp" alt="Synctrack PayPal Tracking Sync" />
+                </div>
+              </div>
+              <div class="app-info">
+                <h3 class="app-title">Synctrack PayPal Tracking Sync</h3>
+                <p class="app-description">Auto-sync PayPal tracking info & Stripe tracking info to get funds faster & build trust with PayPal.</p>
+                <div class="app-details">
+                  <p>Review: 5.0 (58 reviews)</p>
+                  <p>Currently Installed: 369 stores</p>
+                  <p>Include: Engel Coolers, PC Express, Aanya Linen, The Vintage Teacup, Moman PhotoGears</p>
+                  <p class="discount">Discount: <span>20% OFF for 3 months</span></p>
+                </div>
+                <div class="app-code">
+                  <span>Code: <strong>ST_BFCM_MCD</strong></span>
+                  <button class="copy-button" onclick="copyToClipboard('ST_BFCM_MCD')">
+                    <img src="assets/copy.webp" alt="Copy" />
+                  </button>
+                </div>
+                <a href="1" target="_blank"><button class="app-button">Get started</button></a>
+              </div>
+            </div>
+
+            <!-- Add other Payment & Fraud Protection apps here -->
+          </div>
+        </div>
       </div>
     </section>
 
@@ -383,7 +537,41 @@
       </div>
     </section>
 
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+          const button = event.currentTarget;
+          const originalContent = button.innerHTML;
+          
+          button.style.background = '#4CAF50';
+          button.style.borderRadius = '50%';
+          button.style.transform = 'scale(1.2)';
+          button.style.transition = 'all 0.3s ease';
+          button.innerHTML = '✓';
+          button.style.color = 'white';
+          
+          setTimeout(() => {
+            button.style.background = 'transparent';
+            button.style.borderRadius = '0';
+            button.style.transform = 'scale(1)';
+            button.innerHTML = originalContent;
+          }, 2000);
+        }).catch(err => {
+          console.error('Failed to copy:', err);
+          const button = event.currentTarget;
+          
+          button.style.background = '#f44336';
+          button.style.borderRadius = '50%';
+          button.style.transform = 'scale(1.1)';
+          
+          setTimeout(() => {
+            button.style.background = 'transparent';
+            button.style.borderRadius = '0';
+            button.style.transform = 'scale(1)';
+          }, 1000);
+        });
+      }
+    </script>
     <script src="script.js"></script>
-    <script src="js/apps.js"></script>
   </body>
 </html>
