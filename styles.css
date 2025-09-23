@@ -1055,10 +1055,6 @@ body.nav-open .nav-overlay {
   padding: 0 var(--spacing-sm);
 }
 
-.category-tabs input[type="radio"] {
-  display: none;
-}
-
 .tab-button {
   padding: clamp(10px, 2vw, 13px) clamp(16px, 3vw, 26px);
   border: 1px solid #ffffff;
@@ -1074,43 +1070,6 @@ body.nav-open .nav-overlay {
   white-space: nowrap;
   text-align: center;
   min-width: min-content;
-}
-
-/* Show/hide app sections based on radio selection */
-#marketing:checked ~ #sale-apps,
-#marketing:checked ~ #inventory-apps,
-#marketing:checked ~ #payment-apps {
-  display: none;
-}
-
-#sale:checked ~ #marketing-apps,
-#sale:checked ~ #inventory-apps,
-#sale:checked ~ #payment-apps {
-  display: none;
-}
-
-#inventory:checked ~ #marketing-apps,
-#inventory:checked ~ #sale-apps,
-#inventory:checked ~ #payment-apps {
-  display: none;
-}
-
-#payment:checked ~ #marketing-apps,
-#payment:checked ~ #sale-apps,
-#payment:checked ~ #inventory-apps {
-  display: none;
-}
-
-#marketing:checked + label,
-#sale:checked + label,
-#inventory:checked + label,
-#payment:checked + label {
-  background: linear-gradient(90deg, #ff5ad3 0%, #a766fd 100%);
-  border-color: transparent;
-}
-
-.app-section {
-  animation: fadeIn 0.5s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -1153,6 +1112,7 @@ body.nav-open .nav-overlay {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 @media (max-width: 1280px) {
