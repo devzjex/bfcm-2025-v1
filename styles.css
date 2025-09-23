@@ -147,25 +147,9 @@ body.nav-open .nav-overlay {
   position: relative;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  z-index: 1001;
-}
-
 .logo-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-}
-
-.logo-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 32px;
-  color: #f4f5f6;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-menu {
@@ -224,10 +208,6 @@ body.nav-open .nav-overlay {
 @media (max-width: 1024px) {
   .nav-menu {
     gap: 32px;
-  }
-
-  .logo-text {
-    font-size: 22px;
   }
 }
 
@@ -430,7 +410,7 @@ body.nav-open .nav-overlay {
 .avatar-1 {
   width: clamp(40px, 5vw, 65px);
   height: clamp(40px, 5vw, 65px);
-  top: 28%;
+  top: 22%;
   left: 35%;
 }
 
@@ -451,7 +431,7 @@ body.nav-open .nav-overlay {
 .avatar-4 {
   width: clamp(45px, 5vw, 69px);
   height: clamp(45px, 5vw, 69px);
-  top: 28%;
+  top: 22%;
   right: 36%;
 }
 
@@ -748,8 +728,7 @@ body.nav-open .nav-overlay {
 .problem-description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
   color: #c3bacf;
 }
 
@@ -834,9 +813,8 @@ body.nav-open .nav-overlay {
 
 .solutions-description {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  font-weight: 400;
   color: #c4b4ca;
 }
 
@@ -1053,6 +1031,11 @@ body.nav-open .nav-overlay {
   margin-bottom: var(--spacing-xl);
   flex-wrap: wrap;
   padding: 0 var(--spacing-sm);
+  position: sticky;
+  top: 80px;
+  background-color: var(--bg-primary);
+  z-index: 100;
+  padding: 20px var(--spacing-sm);
 }
 
 .tab-button {
@@ -1435,8 +1418,9 @@ body.nav-open .nav-overlay {
 .cta-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  font-size: 52px;
+  line-height: 66.4px;
   font-size: clamp(36px, 4.5vw, 52px);
-  line-height: 1.2;
   color: #ffffff;
   background: linear-gradient(90deg, #a766fd 0%, #ffffff 22.6%, #b775bb 55.29%, #ff5ad3 77.88%, #f5f5f5 100%);
   -webkit-background-clip: text;
@@ -1713,7 +1697,7 @@ body.nav-open .nav-overlay {
     line-height: 24px;
   }
 
-  .cta-button{
+  .cta-button {
     align-self: center;
   }
 }
