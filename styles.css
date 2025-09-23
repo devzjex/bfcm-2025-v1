@@ -126,16 +126,7 @@ body.nav-open .nav-overlay {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 
 .nav-container {
   display: flex;
@@ -301,7 +292,6 @@ body.nav-open .nav-overlay {
 
 .nav-link:hover {
   color: #ffffff;
-  transform: translateY(-2px);
 }
 
 .nav-link:hover::before {
@@ -502,7 +492,6 @@ body.nav-open .nav-overlay {
   max-width: 868px;
   margin: 0 auto;
   z-index: 1;
-  animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 @keyframes fadeInUp {
@@ -597,15 +586,7 @@ body.nav-open .nav-overlay {
   left: 100%;
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(168, 114, 248, 0.7);
-  }
-  50% {
-    box-shadow: 0 0 0 10px rgba(168, 114, 248, 0);
-  }
-}
+
 
 .hero-main-image {
   position: absolute;
@@ -686,7 +667,6 @@ body.nav-open .nav-overlay {
 }
 
 .problem-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(168, 114, 248, 0.2);
 }
 

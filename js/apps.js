@@ -466,15 +466,7 @@ class AppsController {
 
     filteredApps.forEach((app, index) => {
       const card = this.createAppCard(app);
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(20px)';
       this.appCardsGrid.appendChild(card);
-
-      setTimeout(() => {
-        card.style.transition = 'all 0.5s ease';
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0)';
-      }, index * 100);
     });
   }
 

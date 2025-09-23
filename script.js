@@ -97,29 +97,7 @@ window.addEventListener('resize', () => {
 });
 
 function animateFloatingElements() {
-  const floatingElements = document.querySelectorAll('.floating-avatar, .floating-icon');
-
-  floatingElements.forEach((element, index) => {
-    const delay = index * 0.3;
-    const duration = 4 + (index % 3);
-    const direction = index % 2 === 0 ? 'normal' : 'reverse';
-
-    element.style.animation = `fadeIn 1s ease-out ${delay}s forwards, float ${duration}s ease-in-out ${
-      delay + 1
-    }s infinite ${direction}`;
-
-    element.addEventListener('mouseenter', function () {
-      this.style.animationPlayState = 'paused';
-      this.style.transform = 'scale(1.1) rotate(5deg)';
-      this.style.filter = 'brightness(1.2)';
-    });
-
-    element.addEventListener('mouseleave', function () {
-      this.style.animationPlayState = 'running';
-      this.style.transform = '';
-      this.style.filter = '';
-    });
-  });
+  // Animation removed
 }
 
 const style = document.createElement('style');
@@ -324,16 +302,7 @@ if (heroButton) {
   });
 }
 
-const rippleStyle = document.createElement('style');
-rippleStyle.textContent = `
-  @keyframes ripple {
-    to {
-      transform: scale(2);
-      opacity: 0;
-    }
-  }
-`;
-document.head.appendChild(rippleStyle);
+
 
 const ctaButton = document.querySelector('.cta-button');
 if (ctaButton) {
