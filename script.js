@@ -192,37 +192,10 @@ document.querySelectorAll('.copy-button').forEach((button) => {
         this.style.transform = 'scale(1.2)';
         this.style.transition = 'all 0.3s ease';
 
-        this.innerHTML = '✓';
-        this.style.color = 'white';
-        this.style.fontSize = '14px';
-        this.style.fontWeight = 'bold';
-
-        const tooltip = document.createElement('div');
-        tooltip.textContent = 'Copied!';
-        tooltip.style.cssText = `
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: #4CAF50;
-        color: white;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-size: 12px;
-        white-space: nowrap;
-        z-index: 1000;
-        animation: fadeInOut 2s ease-out;
-      `;
-
-        this.style.position = 'relative';
-        this.appendChild(tooltip);
-
         setTimeout(() => {
           this.style.background = 'transparent';
           this.style.borderRadius = '0';
           this.style.transform = 'scale(1)';
-          this.innerHTML = `<img src="${originalImg.src}" style="width: 14px; height: 14px;">`;
-          tooltip.remove();
         }, 2000);
       })
       .catch((err) => {
@@ -240,15 +213,7 @@ document.querySelectorAll('.copy-button').forEach((button) => {
   });
 });
 
-const tooltipStyle = document.createElement('style');
-tooltipStyle.textContent = `
-  @keyframes fadeInOut {
-    0% { opacity: 0; transform: translateX(-50%) translateY(5px); }
-    20%, 80% { opacity: 1; transform: translateX(-50%) translateY(0); }
-    100% { opacity: 0; transform: translateX(-50%) translateY(-5px); }
-  }
-`;
-document.head.appendChild(tooltipStyle);
+
 
 const observerOptions = {
   threshold: 0.1,

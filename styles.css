@@ -1100,7 +1100,7 @@ body.nav-open .nav-overlay {
   flex-wrap: wrap;
   gap: clamp(16px, 3vw, 32px);
   margin-bottom: var(--spacing-lg);
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .app-card {
