@@ -1096,10 +1096,11 @@ body.nav-open .nav-overlay {
 }
 
 .app-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: clamp(16px, 3vw, 32px);
   margin-bottom: var(--spacing-lg);
+  justify-content: center;
 }
 
 .app-card {
@@ -1113,27 +1114,24 @@ body.nav-open .nav-overlay {
   position: relative;
   overflow: hidden;
   height: 100%;
+  flex: 1 1 clamp(280px, 30%, 350px);
+  max-width: 350px;
 }
 
 .app-card.is-hidden {
   display: none;
 }
 
-@media (max-width: 1280px) {
-  .app-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .app-cards-grid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
   .app-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: var(--spacing-lg) var(--spacing-md);
   }
 }
