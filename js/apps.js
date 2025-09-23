@@ -461,10 +461,9 @@ class AppsController {
 
   showApps(category) {
     const filteredApps = appsData.filter((app) => app.type === category);
-
     this.appCardsGrid.innerHTML = '';
-
-    filteredApps.forEach((app, index) => {
+    
+    filteredApps.forEach((app) => {
       const card = this.createAppCard(app);
       this.appCardsGrid.appendChild(card);
     });
