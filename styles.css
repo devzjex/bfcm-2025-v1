@@ -1389,7 +1389,7 @@ body.nav-open .nav-overlay {
 }
 
 .cta-container {
-  max-width: 1318px;
+  max-width: 1392px;
   margin: 0 auto;
   padding: 0 var(--container-padding);
   position: relative;
@@ -1418,7 +1418,6 @@ body.nav-open .nav-overlay {
 .cta-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 52px;
   line-height: 66.4px;
   font-size: clamp(36px, 4.5vw, 52px);
   color: #ffffff;
@@ -1430,8 +1429,7 @@ body.nav-open .nav-overlay {
 .cta-description {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: clamp(18px, 2.6vw, 24px);
-  line-height: 1.6;
+  font-size: clamp(18px, 2.6vw, 18px);
   color: #ffffff;
 }
 
@@ -1477,9 +1475,13 @@ body.nav-open .nav-overlay {
 .cta-placeholder {
   width: 100%;
   min-height: clamp(200px, 35vw, 320px);
-  background: linear-gradient(135deg, rgba(132, 100, 197, 0.15), rgba(83, 16, 180, 0.2));
+}
+
+.cta-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 16px;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
 }
 
 /* Additional Animations */
